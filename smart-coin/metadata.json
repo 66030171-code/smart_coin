@@ -1,0 +1,6 @@
+{
+  "name": "Smart COIN",
+  "description": "Daily production recording system for team leaders, featuring custom scroll pickers, team management, master data routing, and dashboard analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;750&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", "Noto Sans Thai", sans-serif;
+
+  --color-slate-50: #F8F9FA;
+  --color-slate-100: #F1F3F5;
+  --color-slate-200: #E9ECEF;
+  --color-slate-800: #212529;
+  --color-slate-900: #1A1D20;
+}
+
+body {
+  background-color: #F8F9FA;
+  color: #343A40;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom fade-in for smooth navigation feel */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
